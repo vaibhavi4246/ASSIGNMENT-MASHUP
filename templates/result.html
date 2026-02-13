@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashup Service - Success</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 50px 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .success-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: bounce 1s ease;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        h1 {
+            color: #28a745;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+        
+        .message {
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            color: #555;
+        }
+        
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .info-icon {
+            font-size: 1.3em;
+            margin-right: 10px;
+            min-width: 30px;
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            flex: 1;
+            min-width: 140px;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .note {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">✅</div>
+        <h1>Success!</h1>
+        <p class="message">Your mashup is being generated and will be sent to your email shortly.</p>
+        
+        <div class="info-box">
+            <div class="info-item">
+                <span class="info-icon">⏰</span>
+                <span>Processing time: 2-5 minutes</span>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">📧</span>
+                <span>Check your inbox/spam folder</span>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">📦</span>
+                <span>You'll receive a ZIP file</span>
+            </div>
+            <div class="info-item">
+                <span class="info-icon">🎵</span>
+                <span>Contains your MP3 mashup</span>
+            </div>
+        </div>
+        
+        <div class="button-group">
+            <a href="/" class="btn btn-primary">🎵 Create Another</a>
+            <button onclick="window.close()" class="btn btn-secondary">✖️ Close</button>
+        </div>
+        
+        <p class="note">
+            <strong>Note:</strong> If you don't receive the email within 10 minutes, 
+            please check your spam folder or try again.
+        </p>
+    </div>
+</body>
+</html>
