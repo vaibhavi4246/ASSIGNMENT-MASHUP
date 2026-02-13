@@ -165,17 +165,17 @@ python -c "import os; print(os.environ.get('SMTP_EMAIL'))"
 ### Test Program 1
 ```powershell
 # Valid tests
-python 102203579.py "Arijit Singh" 12 25 test1.mp3
-python 102203579.py "Diljit Dosanjh" 15 30 test2.mp3
+python 102303784.py "Arijit Singh" 12 25 test1.mp3
+python 102303784.py "Diljit Dosanjh" 15 30 test2.mp3
 
-# Should fail - N <= 10
-python 102203579.py "Singer" 10 30 fail.mp3
+# Should fail - videos <= 10
+python 102303784.py "Singer" 10 30 fail.mp3
 
-# Should fail - Y <= 20  
-python 102203579.py "Singer" 15 20 fail.mp3
+# Should fail - duration <= 20  
+python 102303784.py "Singer" 15 20 fail.mp3
 
 # Should fail - wrong parameter count
-python 102203579.py "Singer" 15
+python 102303784.py "Singer" 15
 ```
 
 ---
@@ -184,7 +184,7 @@ python 102203579.py "Singer" 15
 
 ```
 ASSIGNMENT-MASHUP/
-├── 102203579.py          # ← Program 1 (CLI)
+├── 102303784.py          # ← Program 1 (CLI)
 ├── app.py                # ← Program 2 (Web)
 ├── requirements.txt      # ← Dependencies
 ├── README.md            # ← Full documentation
@@ -199,7 +199,7 @@ ASSIGNMENT-MASHUP/
 
 ## 🎯 What Each Program Does
 
-### Program 1 (102203579.py)
+### Program 1 (102303784.py)
 1. Takes command-line input
 2. Downloads YouTube videos
 3. Extracts audio
@@ -221,8 +221,8 @@ ASSIGNMENT-MASHUP/
 
 1. **For Program 1**: Use quotes around singer name if it has spaces
    ```powershell
-   python 102203579.py "Sharry Maan" 15 30 output.mp3  # ✅ Good
-   python 102203579.py Sharry Maan 15 30 output.mp3    # ❌ Bad
+   python 102303784.py "Sharry Maan" 15 30 output.mp3  # ✅ Good
+   python 102303784.py Sharry Maan 15 30 output.mp3    # ❌ Bad
    ```
 
 2. **For Program 2**: Keep the terminal running while processing
@@ -263,7 +263,7 @@ ASSIGNMENT-MASHUP/
 ## 🎓 Assignment Submission
 
 Make sure you have:
-1. ✅ `102203579.py` - Working CLI program
+1. ✅ `102303784.py` - Working CLI program
 2. ✅ `app.py` - Working web app
 3. ✅ `templates/` folder with HTML files
 4. ✅ `requirements.txt` - All dependencies
